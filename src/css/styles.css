@@ -1,25 +1,35 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+@import 'simplelightbox/dist/simple-lightbox.min.css';
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+.link-p1 {
+  font-size: 50px;
+  margin-left: 850px;
+}
+.box {
+  max-width: 1128px;
+  max-height: 648px;
+  margin: auto;
+  padding-top: 50px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.gallery-item {
+  list-style-type: none;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.gallery-image:hover {
+  transform: scale(1.044);
 }
